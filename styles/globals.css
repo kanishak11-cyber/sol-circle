@@ -1,26 +1,33 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-1 {
+  background-color: #020202;
+  background-image: linear-gradient(43deg, #121c40 0%, #C850C0 46%, #444444 100%);
+
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: Cyberway;
+  src: url(../assets/font/Cyberway.ttf);
+  font-weight: 400;
+  font-style: normal;
+
 }
 
-* {
-  box-sizing: border-box;
+.cyberway {
+  font-family: Cyberway;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: Revamp;
+  src: url(../assets/font/Revamped.ttf);
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.revamp{
+  font-family: Revamp;
 }
